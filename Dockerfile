@@ -14,6 +14,6 @@ RUN cd ~ && git clone https://github.com/wpscanteam/wpscan.git wpscan \
 
 WORKDIR /home/app/wpscan
 RUN chmod +x ./wpscan.rb
-RUN ./wspcan.rb --update
+RUN ./wpscan.rb --update
 
 ENTRYPOINT ["./wpscan.rb"]
